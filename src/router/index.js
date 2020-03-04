@@ -8,8 +8,15 @@ export default new Router({
   routes: [{
     path: '/',
     component: () => import('@/views/index.vue'),
+    redirect:'/home',
     hidden: true,
-    children: [{
+    children: [
+      {
+        path: '/home',
+        name: 'home',
+        component: () => import('@/views/home.vue'),
+      },
+      {
         path: '/self',
         name: 'self',
         component: () => import('@/views/self.vue'),

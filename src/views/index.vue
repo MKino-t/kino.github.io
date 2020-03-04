@@ -31,7 +31,7 @@ export default {
   },
   methods:{
     getHeight(){
-      this.defaultHeight.height = window.innerHeight - 120 + "px";
+      this.defaultHeight.height = window.innerHeight - 140 + "px";
     },
   },
   created() {

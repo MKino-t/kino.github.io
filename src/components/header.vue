@@ -1,12 +1,11 @@
 <template>
   <div class="page">
     <div class="navCon">
-      <div class="icon">
-        <!-- <img src="" alt=""> -->
-      </div>
       <ul class="navUl">
         <li v-for="(item,idx) in router" :key="idx" class="navLi">
-          <router-link :to="item.path">{{item.name}}</router-link>
+          <router-link :to="item.path">
+            <div>{{item.name}}</div>
+          </router-link>
         </li>
       </ul>
     </div>
@@ -19,6 +18,7 @@ export default {
     return {
       activeIndex2: "1",
       router: [
+        { name: "首页", path: "/home" },
         { name: "个人介绍", path: "/self" },
         { name: "专业技能", path: "/profession" },
         { name: "项目介绍", path: "/project" },
@@ -39,26 +39,26 @@ export default {
   height: 100%;
   display: flex;
 
-  .icon {
-    flex-basis: 30%;
-  }
   .navUl {
-    flex-basis: 60%;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
-    color #fff;
+    color: #fff;
+
     .navLi {
-      width :100%;
-      &:hover {
-        cursor :pointer;
-        background:#1a3754;
-      }
-      a{
-        display:block;
-        width :100%;
-        height 100%;
+      width: 100%;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
       }
     }
   }
+}
+
+.router-link-exact-active {
+  cursor: pointer;
+  background: #1a3754;
 }
 </style>
