@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-   <div>ceshi shuju</div>
+    <div>home</div>
   </div>
 </template>
 
