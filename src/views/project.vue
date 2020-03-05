@@ -1,5 +1,5 @@
 <template>
- <div class="page">
+ <div class="pro">
    project
  </div>
 </template>

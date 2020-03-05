@@ -16,7 +16,7 @@ export default {
   padding: 0;
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
   color: #fff;
   font-size: 20px;
@@ -28,6 +28,7 @@ a{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  /* background: #2c3e50; */
 }
 .el-header {
   background-color: #b3c0d1;
