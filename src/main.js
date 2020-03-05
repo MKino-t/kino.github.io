@@ -4,9 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Element from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 import animated from 'animate.css'
+import Echarts from 'echarts'
+
 
 Vue.config.productionTip = false
+Vue.prototype.echarts = Echarts
+Vue.use(Echarts)
 Vue.use(Element)
 Vue.use(animated)
 /* eslint-disable no-new */

@@ -1,5 +1,5 @@
 <template>
- <div class="page">
+ <div class="carrer">
    carrer
  </div>
 </template>
@@ -18,4 +18,10 @@ export default {
 </script>
 
 <style scoped lang="stylus">
+.carrer {
+  width: 100%;
+  height: 100%;
+  background: url('../assets/carrer.jpg') no-repeat center center;
+  background-size: 100% 100%;
+}
 </style>

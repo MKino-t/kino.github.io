@@ -30,6 +30,9 @@ a {
   color: #2c3e50;
   /* background: #2c3e50; */
 }
+.el-main {
+  padding: 0;
+}
 .el-header {
   background-color: #b3c0d1;
   color: #333;

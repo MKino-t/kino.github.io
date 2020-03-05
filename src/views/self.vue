@@ -6,7 +6,7 @@
       </div>
       <div class="info_data">
         <div>-幸会，我是魏嘉</div>
-        <div>我是一名钱端攻城狮。打造一款成功的产品离不开持之以恒的照料，能成为你的搭档创造出别具一格的作品，我倍感荣幸。</div>
+        <div>我是一名钱端攻城狮。打造一款成功的产品离不开持之以恒的照料，希望能成为你的搭档创造出别具一格的作品，让我倍感荣幸。</div>
       </div>
       <div class="info_data">
         <div>-我能效劳</div>
@@ -14,7 +14,7 @@
       </div>
       <div class="info_data">
         <div>-关于我</div>
-        <div>坐标杭州。码畜，钱端攻城狮，主要从事微信小程序和商超后台的开发。技术栈vue+es6+element ui 不浮躁，执行力，学习能力都棒棒哒！</div>
+        <div>坐标杭州。本科毕业，三年工作经验，钱端攻城狮，主要从事微信小程序和商超后台的开发。技术栈vue+es6+element ui 不浮躁，执行力，学习能力都棒棒哒！</div>
       </div>
     </div>
   </div>
@@ -69,19 +69,18 @@ export default {
   justify-content: center;
   align-items: center;
   transition-duration: 2s;
-
   .info {
     width: 600px;
-    height: 400px;
+    height: 500px;
     padding: 10px 20px;
     border-radius: 10px;
     opacity: 0.5;
-
     &:hover {
       cursor: pointer;
       border: 1px solid #efefef;
       box-shadow: 8px 5px 26px 2px #656B79 !important;
       opacity: 1;
+      transition-duration: 2s;
     }
 
     .info_avater img {

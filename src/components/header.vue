@@ -21,8 +21,8 @@ export default {
         { name: "首页", path: "/home" },
         { name: "个人介绍", path: "/self" },
         { name: "专业技能", path: "/profession" },
-        { name: "项目介绍", path: "/project" },
-        { name: "工作经历", path: "/carrer" }
+        { name: "工作经历", path: "/carrer" },
+        { name: "作品集", path: "/project" }
       ]
     };
   },
@@ -48,6 +48,7 @@ export default {
 
     .navLi {
       width: 100%;
+
       a {
         display: block;
         width: 100%;
