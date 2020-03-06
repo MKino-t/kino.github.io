@@ -50,6 +50,7 @@ export default {
     return {
       pro: [
         {
+          id:'pc',
           img: require("../assets/pro1.png"),
           name: "客无忧乘风os商超后台",
           link: "https://b.ke51.com",
@@ -59,6 +60,7 @@ export default {
             "该项目主要是为了针对超市行业，优化超市管理模式精细、优化商品管理，为各类超市提供智能信息化的管理方案的系统，共有商品资料、库存管理、采购管理、销售管理、员工管理、会员管理、营销管理、公共设置九大模块，前端基于vue框架进行pc端开发，使用element-ui作为ui组件,采用flex弹性盒模型进行页面布局，使用axios与后台进行数据交互，动态渲染页面，使用session保存会话，使用echart进行可视化开发，合理使用vuex存储管理组件的状态、父子组件进行传值，等方式加速开发速度,版本控制为git"
         },
         {
+          id:'h5',
           img: require("../assets/pro1.png"),
           name: "客无忧群英汇",
           link: "https://b.ke51.com",
