@@ -170,7 +170,7 @@ export default {
             border-radius: 50%;
             border: 1px solid rgb(238, 238, 238);
             background: #fff;
-            margin-left: 40px;
+            margin: 0 auto;
             z-index: 10;
 
             .line {
@@ -181,6 +181,10 @@ export default {
             }
           }
         }
+      }
+
+      .carrerItem:last-child {
+        padding-bottom: 30px;
       }
 
       &::after {
