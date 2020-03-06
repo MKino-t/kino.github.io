@@ -31,7 +31,7 @@ a {
   /* background: #2c3e50; */
 }
 .el-main {
-  padding: 0;
+  padding: 0 !important;
 }
 .el-header {
   background-color: #b3c0d1;
