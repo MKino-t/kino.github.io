@@ -31,6 +31,7 @@ export default {
             "javascript",
             "html+css",
             "html5+css3",
+            "jquery",
             "vue",
             "微信小程序",
             "git"
@@ -133,9 +134,39 @@ export default {
             ]
           },
           {
-            name: "vue",
+            name: "jquery",
             type: "pie",
             radius: ["40%", "45%"],
+            data: [
+              // {value:1078, name:'生物'}
+              {
+                value: "75",
+                name: "jquery",
+                itemStyle: {
+                  emphasis: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: "rgba(0, 0, 0, 0.5)",
+                    normal: {
+                      color: "#b3c0d1"
+                    }
+                  }
+                }
+              },
+              {
+                value: "25",
+                itemStyle: {
+                  normal: {
+                    color: "transparent"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            name: "vue",
+            type: "pie",
+            radius: ["50%", "55%"],
             data: [
               // {value:981, name:'政治'}
               {
@@ -165,7 +196,7 @@ export default {
           {
             name: "微信小程序",
             type: "pie",
-            radius: ["50%", "55%"],
+            radius: ["60%", "65%"],
             data: [
               // {value:877, name:'历史'}
               {
@@ -183,7 +214,7 @@ export default {
                 }
               },
               {
-                value: "70",
+                value: "30",
                 itemStyle: {
                   normal: {
                     color: "transparent"
@@ -195,7 +226,7 @@ export default {
           {
             name: "git",
             type: "pie",
-            radius: ["60%", "65%"],
+            radius: ["70%", "75%"],
             data: [
               // {value:939, name:'地理'}
               {
@@ -246,7 +277,7 @@ export default {
   #skill {
     width: 100%;
     height: 100%;
-    padding 20px;
+    padding: 20px;
   }
 }
 </style>

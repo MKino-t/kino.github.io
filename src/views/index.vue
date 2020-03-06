@@ -4,7 +4,7 @@
       <el-header height='80px'>
         <hea></hea>
       </el-header>
-      <el-main :style="defaultHeight">
+      <el-main :style="defaultHeight" style="overflow:hidden">
         <router-view></router-view>
       </el-main>
       <el-footer>
