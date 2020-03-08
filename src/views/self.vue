@@ -1,6 +1,6 @@
 <template>
   <div class="selfCon" :style="'background:url('+bg+')no-repeat center center'">
-    <div class="info">
+    <div class="info" :class="cur==3?'black':''">
       <div class="info_avater">
         <img src="../assets/ava.jpg" alt />
       </div>
@@ -55,7 +55,7 @@ export default {
     setInterval(() => {
       x++;
       that.changeBg(x);
-    }, 3000);
+    }, 2000);
   }
 };
 </script>
@@ -69,12 +69,15 @@ export default {
   justify-content: center;
   align-items: center;
   transition-duration: 2s;
+
   .info {
     width: 600px;
     height: 500px;
     padding: 10px 20px;
     border-radius: 10px;
     opacity: 0.5;
+    color: #fff;
+
     &:hover {
       cursor: pointer;
       border: 1px solid #efefef;
@@ -94,7 +97,6 @@ export default {
 
       div:nth-child(1) {
         font-family: 'Helvetica Neue';
-        color: #fff;
         font-weight: bold;
         font-size: 22px;
         margin: 5px 0;
@@ -102,10 +104,13 @@ export default {
 
       div:nth-child(2) {
         font-family: 'PingFang SC';
-        color: #fff;
         font-size: 18px;
       }
     }
+  }
+
+  .black {
+    color: #1a3754 !important;
   }
 }
 </style>

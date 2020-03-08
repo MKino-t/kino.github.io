@@ -23,10 +23,16 @@ export default {
         tooltip: {
           trigger: "item",
           formatter: "{a} <br/>{b} : {c} ({d}%)"
+          // textStyle: {
+          //   fontWeight: 300,
+          //   fontSize: 16 //文字的字体大小
+          // }
         },
         legend: {
           orient: "vertical",
           left: "left",
+          itemWidth: 40,
+          itemHeight: 20,
           data: [
             "javascript",
             "html+css",
@@ -35,7 +41,7 @@ export default {
             "vue",
             "微信小程序",
             "git"
-          ]
+          ],
         },
         series: [
           {

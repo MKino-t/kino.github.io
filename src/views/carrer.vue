@@ -141,7 +141,7 @@ export default {
         color: #787978;
 
         .carrerItem_l {
-          text-align: right;
+          text-align: left;
           flex-basis: 40%;
 
           .companyTit {
