@@ -1,7 +1,7 @@
 <template>
   <div class="project">
     <div class="projectCon">
-      <el-carousel :interval="4000" type="card" height="500px">
+      <el-carousel :interval="2000" type="card" height="500px">
         <el-carousel-item v-for="(item,idx) in pro" :key="idx">
           <div class="proDiv">
             <div class="pic" @click="detail(item)">
@@ -27,9 +27,7 @@
               @click="tolink(detailObj.link)"
               style="color:#409EFF;cursor:pointer"
             >{{detailObj.link}}</div>
-            <div v-if="detailObj.id=='h5'">
-              <img src alt />
-            </div>
+            <div v-if="detailObj.id=='h5'">{{detailObj.link}}</div>
           </div>
 
           <div class="desCon">
@@ -72,7 +70,7 @@ export default {
           id: "h5",
           img: require("../assets/pro2.jpg"),
           name: "客无忧群英汇",
-          link: "https://b.ke51.com",
+          link: "微信请输入:客无忧群英汇",
           skill: "hbuildx、uni-app、mint-ui、echarts",
           des:
             "此项目是为了给公司代理商提供一个快速便利简单集查询、 购物、咨询等功能于一体的便捷程序， 此程序包含三大模块，一是首页展示页， 首页展示页通过echart进行图表的展示，商城模块则进行商品的展示、购买等功能，功能模块则有 在线充值，提交需求等功能，前端基于vue的基础，使用uniapp开发移动端，使用mint-ui作为ui组件，采用flex弹性盒模型进行页面布局，使用自带api与后台进行数据交互，动态渲染页面，调用微信原生api在h5页面进行充值，其他端调用小程序自带API进行充值功能,版本控制为git"
@@ -81,7 +79,7 @@ export default {
           id: "h5",
           img: require("../assets/pro3.jpg"),
           name: "同城客无忧",
-          link: "https://b.ke51.com",
+          link: "微信请输入:同城客无忧",
           skill: "小程序开发框架、echarts、canvas",
           des:
             "该项目是为了满足不断增多的商户，以云计算为基础，利用大数据结合微信小程序，为他们寻找到精准客人，优化推广的一款程序,包括优选商城，点单，优惠券等功能,前端基于微信按照微开发微信小程序，采用采用flex弹性盒模型进行页面布局，使用自带api与后台进行数据交互，动态渲染页面,版本控制为git"
@@ -90,33 +88,37 @@ export default {
           id: "h5",
           img: require("../assets/pro4.jpg"),
           name: "客无忧商家助手",
-          link: "",
+          link: "微信请输入:客无忧商家助手",
           skill: "小程序开发框架",
-          des: "该项目是为了配合同城客无忧小程序而开发，为商户提供更简单便捷的商家后台服务,前端基于微信按照微开发微信小程序，采用采用flex弹性盒模型进行页面布局，使用自带api与后台进行数据交互，动态渲染页面,版本控制为git"
+          des:
+            "该项目是为了配合同城客无忧小程序而开发，为商户提供更简单便捷的商家后台服务,前端基于微信按照微开发微信小程序，采用采用flex弹性盒模型进行页面布局，使用自带api与后台进行数据交互，动态渲染页面,版本控制为git"
         },
         {
           id: "h5",
           img: require("../assets/pro5.jpg"),
           name: "客无忧售后服务",
-          link: "",
+          link: "微信请输入:客无忧售后服务",
           skill: "小程序开发框架",
-          des: "该项目是为简化公司售后服务而开发的小程序，售后服务人员只需添加相关目录，用户就能用手机查阅，方便快捷,前端基于微信按照微开发微信小程序，采用采用flex弹性盒模型进行页面布局，使用自带api与后台进行数据交互，动态渲染页面,版本控制为git"
+          des:
+            "该项目是为简化公司售后服务而开发的小程序，售后服务人员只需添加相关目录，用户就能用手机查阅，方便快捷,前端基于微信按照微开发微信小程序，采用采用flex弹性盒模型进行页面布局，使用自带api与后台进行数据交互，动态渲染页面,版本控制为git"
         },
         {
           id: "h5",
           img: require("../assets/pro6.jpg"),
           name: "菜芯商家",
-          link: "",
+          link: "微信请输入:菜芯商家",
           skill: "小程序开发框架",
-          des: "该项目是为了政府改造老破旧菜市场而开发的项目,前端基于微信按照微开发微信小程序，采用采用flex弹性盒模型进行页面布局，使用自带api与后台进行数据交互，动态渲染页面,版本控制为git"
+          des:
+            "该项目是为了政府改造老破旧菜市场而开发的项目,前端基于微信按照微开发微信小程序，采用采用flex弹性盒模型进行页面布局，使用自带api与后台进行数据交互，动态渲染页面,版本控制为git"
         },
         {
           id: "h5",
           img: require("../assets/pro7.jpg"),
           name: "停省事",
-          link: "",
+          link: "微信请输入:停省事",
           skill: "小程序开发框架",
-          des: "该项目是公司开展停车业务而开发，前端基于微信按照微开发微信小程序，采用采用flex弹性盒模型进行页面布局，使用自带api与后台进行数据交互，动态渲染页面,版本控制为git"
+          des:
+            "该项目是公司开展停车业务而开发，前端基于微信按照微开发微信小程序，采用采用flex弹性盒模型进行页面布局，使用自带api与后台进行数据交互，动态渲染页面,版本控制为git"
         }
       ],
       proWin: false,
